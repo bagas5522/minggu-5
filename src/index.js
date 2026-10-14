@@ -16,15 +16,15 @@ app.get("/", (req, res) => {
 });
 
 // Endpoint status API
-app.get("/api/status", (req, res) => {
+app.get("/api/info", (req, res) => {
   res.json({
-    status: "aktif",
-    service: "Minggu 5 Express API",
-    runtime: "Cloudflare Workers",
-    version: "1.1.0"
+    name: "Minggu 5 Express API",
+    description: "Aplikasi Node.js dan Express di Cloudflare Workers",
+    version: "1.1.0",
+    endpoints: ["/", "/api/status", "/api/info"],
+    runtime: "Cloudflare Workers"
   });
-});
-app.listen(3000);
+});app.listen(3000);
 
 export default httpServerHandler({ port: 3000 });
 
