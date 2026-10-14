@@ -20,10 +20,10 @@ app.get("/api/status", (req, res) => {
   res.json({
     status: "aktif",
     service: "Minggu 5 Express API",
-    runtime: "Cloudflare Workers"
+    runtime: "Cloudflare Workers",
+    version: "1.1.0"
   });
 });
-
 app.listen(3000);
 
 export default httpServerHandler({ port: 3000 });
