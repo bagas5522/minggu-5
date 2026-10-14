@@ -1,0 +1,8 @@
+
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "minggu5-express-workers",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-12",
+  "compatibility_flags": ["nodejs_compat"]
+}
